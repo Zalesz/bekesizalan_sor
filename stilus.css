@@ -1,0 +1,104 @@
+body {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    color: beige;
+    margin: 0;
+    background-image: url(design/teglafal.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "article nav"
+    "footer footer";
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+    background-color: #333333;
+}
+
+header {
+    height: 300px;
+    grid-area: header;
+    background-image: url(design/beer-new_401732638.jpg);
+    background-size: cover;
+    font-family: garamond;
+    border: solid 1px white;
+}
+header>h1 {
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 32px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+article {
+    grid-area: article;
+    background-color: black;
+    border: 1px solid white;
+
+}
+article>h4 {
+    font-size: 15px;
+}
+article>img {
+    float: left;
+    width: 30%;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+article>ul {
+    padding-left: 40%;
+}
+article>ul>li {
+    text-align: justify;
+    list-style-type: square;
+}
+
+nav {
+    box-sizing: border-box;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "nav1"
+    "nav2"
+    "nav3";
+    border: solid 1px white;
+    border-left: none;
+}
+/*
+.nav1 {
+    grid-area: nav1;
+}
+.nav2 {
+    grid-area: nav2;
+}
+.nav3 {
+    grid-area: nav3;
+}
+    */
+nav>ul {
+    list-style-type: none;
+}
+
+.nav1>ul>li>a {
+    text-decoration: none;
+    color: red;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+
+footer {
+    grid-area: footer;
+    
+}
