@@ -59,6 +59,7 @@ article>img {
 }
 article>ul {
     padding-left: 40%;
+    padding-right: 20px;
 }
 article>ul>li {
     text-align: justify;
